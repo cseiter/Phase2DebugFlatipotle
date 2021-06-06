@@ -47,20 +47,23 @@ function Form(props) {
       <form className="ui form" id="order-form" onSubmit={handleSubmit}>
         <ProteinForm
           protein={formState.protein}
-          handleOnChange={handleChange}
+          handleChange={handleChange}
         />
 
         <FillingForm
           fillings={formState.fillings}
-          handleOnChange={handleChange}
+          handleChange={handleChange}
         />
 
         <ToppingForm
           toppings={formState.toppings}
-          handleOnChange={handleChange}
+          handleChange={handleChange}
         />
 
-        <SideForm sides={formState.sides} handleOnChange={handleChange} />
+        <SideForm
+          sides={formState.sides}
+          handleChange={handleChange}
+        />
 
         <br />
 
