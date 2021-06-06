@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import burritoImg from "../images/burrito-bowl.jpg";
+import Side from "./Side";
 
 function Order(props) {
   const [isClicked, setIsClicked] = useState(false);
